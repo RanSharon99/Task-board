@@ -1,0 +1,208 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 93vh;
+    background-image: url("../assets/images/tile.jpg");
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.notebook1 {
+    text-align: center;
+    padding-bottom: -55px;
+}
+
+.notebook2 {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: -20px;
+}
+
+.notebook3 {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.notes {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+form {
+    text-align: center;
+    margin-top: -145px;
+}
+
+#divInputText {
+    padding: 6px;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+    outline: none;
+    margin-left: 60px;
+    margin-top: -300px;
+    margin-bottom: -11px;
+}
+
+#divInputText:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#special_input_date {
+    padding: 7px;
+    border-radius: 3px;
+    border: 3px solid #ccc;
+    font-size: 14px;
+    width: 200px;
+    outline: none;
+    margin-top: 15px;
+}
+
+#special_input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#special_input_clock {
+    padding: 7px;
+    border-radius: 3px;
+    border: 3px solid #ccc;
+    font-size: 14px;
+    width: 200px;
+    outline: none;
+    margin-top: 3px;
+    margin-left: 5.5px
+}
+
+#divInputClock:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#labelClock,
+#labelDate,
+#labelText {
+    font-size: 21px;
+    font-weight: bold;
+    font-style: oblique;
+
+}
+
+#btnAdd {
+    width: 120px;
+    height: 30px;
+    margin-left: 500px;
+    margin-top: 23px;
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2d2c5e;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btnAdd:hover {
+    background-color: #7cb2e7;
+}
+
+
+#btnReset {
+    width: 120px;
+    height: 30px;
+    margin-left: 750px;
+    margin-top: -31px;
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+
+#btnReset:hover {
+    background-color: #b30015;
+}
+
+.spanClassNote {
+    position: absolute;
+}
+
+.note {
+    position: relative;
+    display: inline-block;
+}
+
+.text-above-image {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    padding: 5px;
+    z-index: 1;
+    max-height: 145px;
+    max-width: 173px;
+    overflow: auto;
+}
+
+.note img {
+    display: block;
+    max-width: 100%;
+}
+
+.textClockClass {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    padding: 5px;
+    z-index: 1;
+    margin-left: -44px;
+    margin-top: 93px;
+
+}
+
+.textDateClass {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    padding: 5px;
+    z-index: 1;
+    margin-left: -44px;
+    margin-top: 73px;
+}
+
+.btn-css {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 150px;
+    font-weight: bolder;
+    font-size: large;
+    display: none;
+}
+
+.note:hover .btn-css {
+    display: block;
+}
+
+.fadeInAnimation{
+    animation: fadeIn 0.7s ease-in-out;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
